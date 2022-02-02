@@ -1,0 +1,488 @@
+/*--цвет заголовка #212121; --*/
+/*--цвет  текста #757575; --*/
+/*--цвет  синий #2196F3; --*/
+/*--цвет  белый #FFFFFF; --*/
+/*--цвет серый background: #F5F4FA; --*/
+/*--цвет черный background: #2F303A; --*/
+
+:root {
+  --one-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --two-text-color: #ffffff;
+  --button-first-color: #2196f3;
+  --button-second-color: #ffffff;
+  --contakt-link-header: #757575;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+.body :focus {
+  cursor: pointer;
+  list-style-type: none;
+}
+.body {
+  font-family: Roboto, sans-serif;
+}
+
+/* шапка*/
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  display: flex;
+}
+.contact-lyst {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-lyst :focus,
+.contact-lyst :hover {
+  color: var(--accent-color);
+}
+.navigation :focus,
+.navigation :hover {
+  color: var(--accent-color);
+}
+.navigation .current {
+  color: var(--accent-color);
+}
+.navigation {
+  margin-left: 93px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+.header .logo-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-link-one {
+  color: #212121;
+}
+.logo-link-two {
+  color: #ffffff;
+}
+
+.navigation-list .link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigation-list .link:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-text {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+}
+
+.contact {
+  display: flex;
+  margin-left: 30px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+/* герой*/
+
+.hero {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding-bottom: 94px;
+
+  width: 1600px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #2f303a;
+  font-family: Roboto, sans-serif;
+}
+.hero-text {
+  display: flex;
+  padding-bottom: 30px;
+
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  color: #ffffff;
+}
+
+.btn :focus,
+.btn :hover {
+  color: var(--button-second-color);
+}
+
+/* особенности */
+
+.after-list {
+  justify-content: center;
+  display: flex;
+  width: 1170px;
+  height: 101px;
+  margin: 94px auto;
+  padding-right: 0;
+}
+
+.after-item {
+  flex-direction: column;
+  display: flex;
+
+  width: 270px;
+  height: 101px;
+
+  text-decoration: none;
+}
+.after-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.after-hero {
+  cursor: pointer;
+}
+
+.after-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.after-text {
+  padding-top: 10px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--one-text-color);
+}
+
+/* секции */
+
+.works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 94px 215px;
+
+  width: 1200px;
+  padding: 0 15px;
+
+  cursor: pointer;
+}
+
+.comand {
+  display: flex;
+  width: 1200px;
+  padding: 0 15px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 94px;
+
+  cursor: pointer;
+}
+.thumb-comand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  margin-top: 50px;
+}
+
+.list-comand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.item-one:not(:last-child) {
+  margin-right: 30px;
+}
+.item-comand:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-comand {
+  display: block;
+  margin-top: 50px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.two {
+  display: flex;
+  background-color: #f5f4fa;
+}
+
+.comand .section-titel {
+  margin-top: 94px;
+}
+
+.section-titel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.standart-title {
+  padding-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.standart-text {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--one-text-color);
+}
+
+/* подвал*/
+.footer {
+  flex-direction: column;
+  padding: 60px 1154px 60px 215px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.footer .logo-link {
+  display: block;
+  padding-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.footer .logo-link-one {
+  color: #212121;
+}
+.logo-link-two {
+  color: #ffffff;
+}
+
+.footer-list { 
+  font-family: Robto, sans-serif;
+  font-style: normal;
+}
+.contact-lynk-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.contact-lynk-connect {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+  background: #2f303a;
+  text-decoration: none;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-item :focus,
+.footer-item :hover {
+  color: var(--accent-color);
+}
+
+/* 2 портфолио */
+.card-pfo {
+  padding: 20px 24px 20px 24px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.textpfo {
+  margin-top: 4px;
+}
+.list-pfo .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-pfo {
+  margin-top: 34px;
+}
+
+.thumb-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-right: -30px;
+}
+
+.item-two {
+  display: block;
+  width: 370px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.item-two {
+  flex-basis: calc(100% / 3-30px);
+}
+
+.list-pfo .standart-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.list-pfo .standart-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--one-text-color);
+}
+.pfo-btn .current {
+  color: var(--button-second-color);
+  background-color: var(--button-first-color);
+}
+.pfo-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--title-text-color);
+}
+.pfo-button + .pfo-button:not(:first-child) {
+  margin-left: 8px;
+}
+
+.pfo-btn :hover,
+.pfo-btn :focus {
+  color: var(--button-second-color);
+  background-color: var(--accent-color);
+}
+
+.pfo-btn .pfo-button {
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
