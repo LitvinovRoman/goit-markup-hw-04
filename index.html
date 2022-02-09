@@ -16,21 +16,18 @@
 <body class="body">
     <header class="header container">        
         <a class="logo-link" lang="en" href="/">Web<span class="logo-link-one">Studio</span></a>
-        <nav class="navigation">            
-            <ul class="navigation-list">
-                <div class="nav">
+        <nav class="navigation">           
+            <ul class="navigation-list">                
                 <li  class="link"><a class="header-text current" href="./index.html">Студия</a></li>
                 <li  class="link"><a class="header-text" href="./portfolio.html">Портфолио</a></li>
-                <li  class="link"><a class="header-text" href="./contact.html">Контакты</a></li>
-                </div>
-            </ul>            
+                <li  class="link"><a class="header-text" href="./contact.html">Контакты</a></li>               
+            </ul>         
         </nav>
         <ul class="contact-lyst">
-            <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="header-contact"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-        </div>
+            <li class="header-contact"><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>        
     </header>
     <main class="main">
         <section class="hero">
@@ -38,27 +35,31 @@
             <button class="btn" type="button">Заказать услугу</button>
         </section>
         <section class="after-hero">
+            <div class="container">
             <ul  class="after-list">
-                <li class="after-item">
-                    <h2 class="after-title">Внимание к деталям</h3>
+                <li class="after-item antena"> 
+                <svg class="im-antena">
+                    <use href="../goit-markup-hw-04/icons/symbol-defs.svg4#icon-antena"></use>
+                </svg>               
+                    <h3 class="after-title">Внимание к деталям</h3>
                     <p class="after-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="after-item">
-                    <h2 class="after-title">Пунктуальность</h3>
+                    <h3 class="after-title">Пунктуальность</h3>
                     <p class="after-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="after-item">
-                    <h3 class="after-title">Планирование</h3>
+                <li class="after-item comp-title">Планирование</h3>
                     <p class="after-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="after-item">
-                    <h2 class="after-title">Современные технологии</h3>
+                <li class="after-item">                
+                    <h3 class="after-title">Современные технологии</h3>
                     <p class="after-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="section-standart one">
-            <div class="works">
+            <div class="container">
             <h2 class="section-titel">Чем мы занимаемся</h2>
             <ul class="list-one">
                 <li class="item-one"><img src="./images/img.jpg" alt="создание html" width="370"></li>
@@ -67,34 +68,34 @@
             </ul>
             </div>
         </section>
-        <section class="section-standar two">
-            <div class="comand">
+        <section class="section-standart two">
+            <div class="container">
             <h2 class="section-titel">Наша команда</h2>
             <ul class="list-comand">
-                <li class="item-comand">
-                    <div class="thumb-comand">                                  
+                <li class="item-comand">                                                    
                     <img src="./images/img3.jpg" alt="изображение Игоря Демьяненко" width="270">
+                    <div class="thumb-comand-one">
                     <h3 class="standart-title">Игорь Демьяненко</h3>
                     <p class="standart-text" lang="en">Product Designer</p>
                     </div> 
                 </li>
-                <li class="item-comand">
-                    <div class="thumb-comand">
+                <li class="item-comand">                    
                     <img src="./images/img4.jpg" alt="изображение Ольги Репиной" width="270">
+                    <div class="thumb-comand-two">
                     <h3 class="standart-title">Ольга Репина</h3>
                     <p class="standart-text" lang="en">Frontend Developer</p>
                     </div> 
                 </li>
-                <li class="item-comand">
-                    <div class="thumb-comand">
+                <li class="item-comand">                    
                     <img src="./images/img5.jpg" alt="изображение Николая Тарасова" width="270">
+                    <div class="thumb-comand-three">
                     <h3 class="standart-title">Николай Тарасов</h3>
                     <p class="standart-text" lang="en">Marketing</p>
                     </div> 
                 </li>
-                <li class="item-comand">
-                    <div class="thumb-comand">
+                <li class="item-comand">                    
                     <img src="./images/img6.jpg" alt="изображение Михаила Ермакова" width="270">
+                    <div class="thumb-comand-four">
                     <h3 class="standart-title">Михаил Ермаков</h3>
                     <p class="standart-text" lang="en">UI Designer</p>
                     </div> 
@@ -122,6 +123,6 @@
             </ul>
         </address>
         </div> 
-        </footer>
+    </footer>
 </body>
 </html>
