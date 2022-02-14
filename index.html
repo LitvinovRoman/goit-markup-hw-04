@@ -14,7 +14,8 @@
 </head>
 
 <body class="body">
-    <header class="header container">        
+    <header class="header">  
+        <div class="container">     
         <a class="logo-link" lang="en" href="/">Web<span class="logo-link-one">Studio</span></a>
         <nav class="navigation">           
             <ul class="navigation-list">                
@@ -24,88 +25,205 @@
             </ul>         
         </nav>
         <ul class="contact-lyst">
-            <li class="header-contact"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="header-contact"><a class="contact" href="mailto:info@devstudio.com">
+                <svg class="icon-cont mail">
+                    <use href="./images/icons/symbol-defs.svg#icon-envelope">
+                    </use>
+            </svg>info@devstudio.com</a>
             </li>
-            <li class="header-contact"><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>        
+            <li class="header-contact"><a class="contact" href="tel:+380961111111">
+            <svg class="icon-cont tel">
+                    <use href="./images/icons/symbol-defs.svg#icon-tel">
+                    </use>
+            </svg>+38 096 111 11 11</a></li>
+        </ul>
+        </div>        
     </header>
     <main class="main">
         <section class="hero">
+            <div class="container">
             <h1 class="hero-text">Эффективные решения<br> для вашего бизнеса</h1>
             <button class="btn" type="button">Заказать услугу</button>
         </section>
-        <section class="after-hero">
+        <section class="section after-hero">
+            <h2 class="visually-hidden">WebStudio Особенности</h2>
             <div class="container">
             <ul  class="after-list">
-                <li class="after-item antena"> 
-                <svg class="im-antena">
-                    <use href="../goit-markup-hw-04/icons/symbol-defs.svg4#icon-antena"></use>
-                </svg>               
+                <li class="after-item">
+                    <div class="after-icon">
+                        <svg class="svg-icon">
+                            <use href="/images/icons/symbol-defs.svg#icon-antena"></use>
+                        </svg>
+                    </div>
                     <h3 class="after-title">Внимание к деталям</h3>
                     <p class="after-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="after-item">
+                                        <div class="after-icon">
+                        <svg class="svg-icon">
+                            <use href="/images/icons/symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                    </div>
                     <h3 class="after-title">Пунктуальность</h3>
                     <p class="after-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="after-item comp-title">Планирование</h3>
+                <li class="after-item">
+                                        <div class="after-icon">
+                        <svg class="svg-icon">
+                            <use href="/images/icons/symbol-defs.svg#icon-comp"></use>
+                        </svg>
+                    </div>
+                    <h3 class="after-title">Планирование</h3>
                     <p class="after-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="after-item">                
+                <li class="after-item">
+                                        <div class="after-icon">
+                        <svg class="svg-icon">
+                            <use href="/images/icons/symbol-defs.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
                     <h3 class="after-title">Современные технологии</h3>
                     <p class="after-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
-            </ul>
-            </div>
+            </ul>  
+            </div>          
         </section>
-        <section class="section-standart one">
-            <div class="container">
+        <section class="section chem">
+        <div class="container">           
             <h2 class="section-titel">Чем мы занимаемся</h2>
             <ul class="list-one">
                 <li class="item-one"><img src="./images/img.jpg" alt="создание html" width="370"></li>
                 <li class="item-one"><img src="./images/img1.jpg" alt="проверка html" width="370"></li>
                 <li class="item-one"><img src="./images/img2.jpg" alt="редактирование html" width="370"></li>
             </ul>
-            </div>
+            </div>           
         </section>
-        <section class="section-standart two">
-            <div class="container">
+        <section class="section nasha">
+            <div class="container">          
             <h2 class="section-titel">Наша команда</h2>
             <ul class="list-comand">
                 <li class="item-comand">                                                    
                     <img src="./images/img3.jpg" alt="изображение Игоря Демьяненко" width="270">
-                    <div class="thumb-comand-one">
+                    <div class="thumb-comand">
                     <h3 class="standart-title">Игорь Демьяненко</h3>
                     <p class="standart-text" lang="en">Product Designer</p>
+                    <ul class="nasha-comand">
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram">
+                            </use></svg></a></li>
+                                <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-twitter">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebook">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-in">
+                            </use></svg></a></li> 
+                    </ul>      
                     </div> 
                 </li>
                 <li class="item-comand">                    
                     <img src="./images/img4.jpg" alt="изображение Ольги Репиной" width="270">
-                    <div class="thumb-comand-two">
+                    <div class="thumb-comand">
                     <h3 class="standart-title">Ольга Репина</h3>
                     <p class="standart-text" lang="en">Frontend Developer</p>
+                    <ul class="nasha-comand">
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram">
+                            </use></svg></a></li>
+                                <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-twitter">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebook">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-in">
+                            </use></svg></a></li>
+                    </ul> 
                     </div> 
                 </li>
                 <li class="item-comand">                    
                     <img src="./images/img5.jpg" alt="изображение Николая Тарасова" width="270">
-                    <div class="thumb-comand-three">
+                    <div class="thumb-comand">
                     <h3 class="standart-title">Николай Тарасов</h3>
                     <p class="standart-text" lang="en">Marketing</p>
+                    <ul class="nasha-comand">
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram">
+                            </use></svg></a></li>
+                                <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-twitter">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebook">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-in">
+                            </use></svg></a></li>
+                    </ul> 
                     </div> 
                 </li>
                 <li class="item-comand">                    
                     <img src="./images/img6.jpg" alt="изображение Михаила Ермакова" width="270">
-                    <div class="thumb-comand-four">
+                    <div class="thumb-comand">
                     <h3 class="standart-title">Михаил Ермаков</h3>
                     <p class="standart-text" lang="en">UI Designer</p>
+                    <ul class="nasha-comand">
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram">
+                            </use></svg></a></li>
+                                <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-twitter">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebook">
+                            </use></svg></a></li>
+                        <li class="comand-item">
+                            <a href="" class="disp-item">
+                            <svg class="cont-item">
+                                <use href="./images/icons/symbol-defs.svg#icon-in">
+                            </use></svg></a></li>
+                    </ul> 
                     </div> 
                 </li>
             </ul>
-            </div>
+            </div>            
         </section>
     </main>
-    <footer class="footer"> 
-        <div class="container">     
+    <footer class="footer">  
+        <div class="container">      
         <a  class="logo-link" href="/">Web<span class="logo-link-two">Studio</span></a>        
         <address class="address">
             <ul class="footer-list">
@@ -121,8 +239,8 @@
                     <a class="contact-lynk-connect" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </address>
-        </div> 
+        </address> 
+        </div>       
     </footer>
 </body>
 </html>
