@@ -292,10 +292,7 @@ padding-bottom: 94px;
 }
 
 /* секции */
-.disp-item:hover,
-.disp-item:focus {
-  background-color: var(--accent-color);
-}
+
 .disp-item:hover,
 .disp-item:focus {
 background-color: var(--accent-color);
@@ -305,8 +302,9 @@ width: 20px;
 height: 20px;
 fill: var(--icon-color-one);
 }
-.cont-item:hover,
-.cont-item:focus {
+
+.disp-item:hover .cont-item,
+.disp-item:focus .cont-item {
   fill: var(--button-second-color);
 }
 
