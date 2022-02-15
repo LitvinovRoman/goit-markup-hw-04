@@ -294,14 +294,16 @@ padding-bottom: 94px;
 /* секции */
 .link-customers {
   display: flex;
-  padding: 16px 32px;
 }
+
 .svg-customers {
   width: 106px;
   height: 60px;
-fill: var(--icon-color-one);
+  padding: 16px 32px;
+  fill: var(--icon-color-one);
 }
-.item-customers :not(:first-child) {
+
+.item-customers:not(:first-child) {
   margin-left: 30px;
 }
 .list-customers {
@@ -350,12 +352,13 @@ fill: var(--icon-color-one);
 
 
 }
-.comand-item :not(:last-child){
+.comand-item:not(:last-child) {
   margin-right: 10px;
 }
 .comand-item {
-  margin-right: 10px;
+  cursor: pointer;
 }
+
 .nasha-comand {
   display: flex;
   justify-content: center;
@@ -432,6 +435,54 @@ margin-top: 10px;
 }
 
 /* подвал*/
+.social-link {
+  display: flex;
+  align-items: center;
+}
+.social-item:hover,
+.social-item:focus {
+  background-color:var(--accent-color) ;
+}
+
+.cont-social {
+  width: 20px;
+  height: 20px;
+  fill: var(--button-second-color);
+}
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.social .social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer .container {
+  display: flex;
+}
+.grup {
+margin-left: 70px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+    margin-top: 20px;
+}
+.title-footer {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1,14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -554,8 +605,8 @@ padding: 20px 24px;
   margin-left: 8px;
 }
 
-.item-pfo-btn :hover,
-.item-pfo-btn :focus {
+.item-pfo-btn:hover,
+.item-pfo-btn:focus {
   color: var(--button-second-color);
   background-color: var(--accent-color);
 }
