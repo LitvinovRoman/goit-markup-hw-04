@@ -292,6 +292,38 @@ padding-bottom: 94px;
 }
 
 /* секции */
+.link-customers {
+  display: flex;
+  padding: 16px 32px;
+}
+.svg-customers {
+  width: 106px;
+  height: 60px;
+fill: var(--icon-color-one);
+}
+.item-customers :not(:first-child) {
+  margin-left: 30px;
+}
+.list-customers {
+  display: flex;
+  justify-content: space-between;
+}
+.item-customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 170px;
+  height: 92px;
+ border: 1px solid #AFB1B8;
+ box-sizing: border-box;
+ border-radius: 4px;
+}
+.customers {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .disp-item:hover,
 .disp-item:focus {
@@ -320,7 +352,7 @@ fill: var(--icon-color-one);
 }
 .comand-item :not(:last-child){
   margin-right: 10px;
-}l
+}
 .comand-item {
   margin-right: 10px;
 }
