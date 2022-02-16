@@ -67,7 +67,7 @@ a {
   font-family: Roboto, sans-serif;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -75,21 +75,16 @@ a {
 
 /* шапка*/
 .mail {
+  fill: currentColor;
+  margin-right: 10px;
   width: 16px;
   height: 10px;
 }
 .tel {
+  fill: currentColor;
+  margin-right: 10px;
   width: 10px;
   height: 16px;
-}
-.icon-cont {
-  background-color: #fff;
-  fill: var(--contakt-link-header);
-  margin-right: 10px;
-}
-.icon-cont:hover,
-.icon-cont:focus {
-  background-color: var(--accent-color);
 }
 
 .navigation-list {
@@ -191,13 +186,13 @@ a {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-text-align: center;
-min-width: 1600px;
+  text-align: center;
+  max-width: 1600px;
   background-color: #2f303a;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/герой.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/герой.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .hero-text {
   font-size: 44px;
@@ -268,7 +263,7 @@ min-width: 1600px;
 }
 
 .after-hero {
-  min-width: 1170px;
+width:1200px;
 padding-top: 94px;
 padding-bottom: 94px;
 }
@@ -293,9 +288,21 @@ padding-bottom: 94px;
 }
 
 /* секции */
+.item-customers {
+  display: flex;
+}
+.svg-customers:hover,
+.svg-customers:focus {
+fill: var(--accent-color);
+}
+.link-customers:hover,
+.link-customers:focus {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 
 .svg-customers {
-
   fill: var(--icon-color-one);
 }
 
@@ -321,6 +328,7 @@ padding-bottom: 94px;
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
+  cursor: pointer;
 }
 
 .disp-item:hover,
@@ -362,13 +370,13 @@ fill: var(--icon-color-one);
 
 .chem {
   text-align: center;
-  min-width: 1170px;
+  min-width: 1200px;
     padding-bottom: 94px;
 }
 
 .nasha {
   text-align: center;
-   min-width: 1170px;
+   min-width: 1200px;
   background: #F5F4FA;
    padding-top: 94px;
    padding-bottom: 94px;
@@ -474,7 +482,7 @@ margin-left: 70px;
 .title-footer {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF
@@ -534,14 +542,27 @@ margin-left: 70px;
 }
 
 /* 2 портфолио */
-.portfolio {
+.item-pfo-btn :hover,
+.item-pfo-btn :focus {
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+ 0px 1px 2px rgba(0, 0, 0, 0.08),
+ 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pfo-link :hover,
+.pfo-link :focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.pfo {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .visually-hidden {
   opacity: 0;
-position: absolute;
   height: 0;
   width: 0;
 }
@@ -566,10 +587,10 @@ padding: 20px 24px;
 }
 
 .item-two {
-  display: block;
   width: 370px;
   margin-left: 30px;
   margin-top: 30px;
+    cursor: pointer;
 }
 
 .list-pfo .standart-title {
@@ -601,8 +622,8 @@ padding: 20px 24px;
   margin-left: 8px;
 }
 
-.item-pfo-btn:hover,
-.item-pfo-btn:focus {
+.item-pfo-btn :hover,
+.item-pfo-btn :focus {
   color: var(--button-second-color);
   background-color: var(--accent-color);
 }
