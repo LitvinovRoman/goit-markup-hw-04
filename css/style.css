@@ -469,7 +469,7 @@ fill: var(--icon-color-one);
 
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .grup {
 margin-left: 70px;
