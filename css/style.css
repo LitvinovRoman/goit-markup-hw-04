@@ -294,7 +294,7 @@ padding-bottom: 94px;
   display: flex;
 }
 .link-customers:hover .svg-customers,
-.link-customers:hover.svg-customers {
+.link-customers:focus .svg-customers {
 fill: var(--accent-color);
 }
 .link-customers:hover,
@@ -443,9 +443,13 @@ fill: var(--icon-color-one);
   display: flex;
   align-items: center;
 }
+.social-item:hover .social-link,
+.social-item:focus .social-link {
+  fill: var(--button-second-color);
+}
 .social-item:hover,
 .social-item:focus {
-  background-color:var(--accent-color) ;
+background-color: var(--accent-color);
 }
 
 .cont-social {
